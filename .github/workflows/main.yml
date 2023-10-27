@@ -27,6 +27,7 @@ jobs:
             docker build . --tag $IMAGE_NAME
             docker push $IMAGE_NAME
 
+
     deploy:
         needs: publish
         name: deploy image
